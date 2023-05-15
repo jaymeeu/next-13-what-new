@@ -6,7 +6,7 @@ const page = async ({params}) => {
 
 
     const res = await fetch(
-        `https://jsonplaceholder.typicode.com/post/${params.ssr}`, 
+        `https://jsonplaceholder.typicode.com/posts/${params.ssr}`, 
         {cache : 'no-store'} //this makes it SSR
     )
     const data  = res.json()

@@ -5,7 +5,7 @@ const page = async ({params}) => {
     //2. Static side generation (SSG)
     
     const res = await fetch(
-        `https://jsonplaceholder.typicode.com/post/${params.ssg}` 
+        `https://jsonplaceholder.typicode.com/posts/${params.ssg}` 
     )
 
     //remove the cache : 'no-store' makes it SSG
